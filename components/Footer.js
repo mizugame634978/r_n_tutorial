@@ -1,5 +1,5 @@
 
-import styles from '../study-react/src/app/page.module.css'
+import styles from '../src/app/page.module.css'
 
 
 export function Footer() {
