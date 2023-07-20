@@ -1,51 +1,11 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import {Links} from '../../components/Links'
-import {Footer} from '../../components/Footer'
-import {Headline} from '../../components/Headline'
-
+"use client"; //これがないとpropsで関数を渡せない
+import { Footer } from "../../components/Footer";
+import { Main } from "../../components/Main";
 export default function Home() {
   return (
-    <main className={styles.main}>
-      {/* <div className={styles.description}>
-
-        <p>
-          hogehoe Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div> */}
-      <Headline title="pages index" page="index"/>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <Links />
+    <div>
+      <Main page="index" />
       <Footer />
-    </main>
-  )
+    </div>
+  );
 }
