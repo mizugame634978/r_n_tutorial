@@ -2,11 +2,12 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import {Links} from '../../components/Links'
 import {Footer} from '../../components/Footer'
+import {Headline} from '../../components/Headline'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      {/* <div className={styles.description}>
 
         <p>
           hogehoe Get started by editing&nbsp;
@@ -29,7 +30,8 @@ export default function Home() {
             />
           </a>
         </div>
-      </div>
+      </div> */}
+      <Headline title="pages index" page="index"/>
 
       <div className={styles.center}>
         <Image

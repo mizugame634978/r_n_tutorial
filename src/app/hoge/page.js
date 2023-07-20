@@ -1,13 +1,15 @@
 import Image from 'next/image'
 import styles from '../page.module.css'
-
+import {Headline} from '../../../components/Headline'
 export default function Home() {
   return (
+
     <main className={styles.main}>
-      <div className={styles.description}>
+      <Headline title="hoge index" page="hoge"/>
+      {/* <div className={styles.description}>
         <p>
           hogehoe Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
+          <code className={styles.code}>src/app/page .js</code>
         </p>
         <div>
 
@@ -21,7 +23,7 @@ export default function Home() {
               priority
             />
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.center}>
         <Image
