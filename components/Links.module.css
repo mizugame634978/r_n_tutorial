@@ -1,11 +1,16 @@
-
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
 }
-
+/* globals.css */
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+}
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
@@ -58,13 +63,6 @@
   .center::before {
     transform: none;
     height: 300px;
-  }
-  /* globals.css */
-  .container {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5rem;
   }
 
   .description {
