@@ -1,13 +1,13 @@
 
-import styles from '../src/app/page.module.css'
+import classes from './Links.module.css'
 
 
 export function Links() {
   return (
-    <div className={styles.grid}>
+    <div className={classes.grid}>
       <a
         href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-        className={styles.card}
+        className={classes.card}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -19,7 +19,7 @@ export function Links() {
 
       <a
         href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-        className={styles.card}
+        className={classes.card}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -31,7 +31,7 @@ export function Links() {
 
       <a
         href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-        className={styles.card}
+        className={classes.card}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -43,7 +43,7 @@ export function Links() {
 
       <a
         href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-        className={styles.card}
+        className={classes.card}
         target="_blank"
         rel="noopener noreferrer"
       >

@@ -1,7 +1,10 @@
 //'use client';//これがないとpropsで関数を渡せない
 import Image from 'next/image'
-import styles from '../src/app/page.module.css'
+// import styles from '../src/app/page.module.css'
+import styles from './Main.module.css'
+
 import {Links} from './Links'
+import {Footer} from './Footer'
 
 import {Headline} from './Headline'
 
@@ -23,6 +26,7 @@ export  function Main(props) {
         />
       </div>
       <Links />
+
     </main>
   )
 }

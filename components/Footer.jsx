@@ -1,14 +1,15 @@
 
-import styles from '../src/app/page.module.css'
+import classes from './Footer.module.css'
 
 
 export function Footer() {
     return (
-        <footer className={styles.footer}>
+        <footer className={classes.footer}>
             <a>
                 powerd by hogehoge
+
             </a>
         </footer>
 
-    )
+    );
 }
