@@ -1,15 +1,16 @@
-//'use client';//これがないとpropsで関数を渡せない
+'use client';//これがないとpropsで関数を渡せない
 import Image from 'next/image'
 // import classes from '../src/app/page.module.css'
 import classes from '@/app/components/Main/Main.module.css'
 
 //import {Links} from 'src/app/components/Links'
-
+import { useEffect } from 'react'
 
 import {Headline} from '@/app/components/Headline'
 import { Links } from '@/app/components/Links'
 
 export  function Main(props) {
+
 
   return (
     <main className={classes.main}>
