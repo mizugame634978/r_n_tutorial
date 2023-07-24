@@ -1,4 +1,7 @@
 {
     "javascript.preferences.importModuleSpecifier": "non-relative",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.fontSize": 16,
+    //"editor.fontFamily": "Consolas, 'Courier New', monospace"デフォルトの設定
+    "editor.fontFamily": "'源ノ角ゴシック Code JP' , monospace"
 }
