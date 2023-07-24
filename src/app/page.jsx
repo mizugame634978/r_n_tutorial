@@ -15,14 +15,14 @@ export default function Home() {
     //useCallbackをつかうことで再読み込みの際に関数が再レンダリングされなくなる
 
     if (count < 10) {
-      setCount((hiki) => hiki + 1); //アロー関数(１行),前回のhiki+1(返り値)の値をみて処理をするので、countがずっと１でもここは増え続ける
+      setCount((prevCount) => prevCount + 1); //アロー関数(１行),前回のprevCount+1(返り値)の値をみて処理をするので、countがずっと１でもここは増え続ける
       //引数countを受け取り、count+1を返す
       //またsetCountはuseStateで生み出された関数なので自動的に引数には勝手にcountが入る
     }
   }, [count]);
 
   const handleDisplay = useCallback(() => {
-    setisShow((hiki) => !hiki); //not(!)だからtrueだとfalseになる？
+    setisShow((prevIsShow) => !prevIsShow); //not(!)だからtrueだとfalseになる？
   }, []);
 
   const handleChange = useCallback((e) => {
