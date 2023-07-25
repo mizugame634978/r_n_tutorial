@@ -4,13 +4,13 @@ export function Header() {
   return (
     <header className={classes.header}>
       <Link href="/" className={classes.anchor}>
-        {/* <a>index</a> */}
+        {/* <a>index</a> next12ではaタグがいるらしい*/}
         index
       </Link>
 
-      <Link href="/hoge"className={classes.anchor}>
+      <Link href="/about"className={classes.anchor}>
         {/* <a>hoge</a> */}
-        hoge
+        about
       </Link>
     </header>
   );
