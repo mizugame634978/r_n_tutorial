@@ -1,4 +1,6 @@
-"use client"; //これがないとpropsで関数を渡せない
+"use client"; //これがないとpropsで関数を渡せない,clientでこれが実行される
+
+import {useSearchParams}from "next/navigation";
 import {  useEffect } from "react";
 
 
