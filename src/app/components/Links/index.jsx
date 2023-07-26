@@ -1,34 +1,15 @@
+
 import classes from "./Links.module.css";
 
-const ITEMS = [
-  {
-    href: "https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app",
-    title: "Docs →",
-    description: "Find in-depth information about Next.js features and API.",
-  },
-  {
-    href: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app",
-    title: "learn \u2192",//unicode2192
-    description:
-      "Learn about Next.js in an interactive course with&nbsp;quizzes!",
-  },
-  {
-    href: "https://nextjs.org/templates?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app",
-    title: "templates ",
-    description: "aaaaaaaaaaExplore the Next.js 13 playground.",
-  },
-  {
-    href: "https://nextjs.org/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app",
-    title: "deploy ",
-    description:
-      "Instantly deploy your Next.js site to a shareable URL with Vercel.",
-  },
-];
 
-export function Links() {
+
+export function Links({items,handleReduce}) {
+
   return (
     <div className={classes.grid}>
-      {ITEMS.map((item) => {
+      <button onClick={handleReduce}>減らす</button>
+      
+      {items.map((item) => {
         //itemはITEMをfor文で回した際の返却物？
         return (
           <a

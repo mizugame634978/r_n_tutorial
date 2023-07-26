@@ -11,7 +11,7 @@ import { useBgLightBlue } from "@/app/hooks/useBgLightBlue";
 
 
 export default function Home() {
-  const { count, isShow, handleClick, handleDisplay } = useCounter();//useHogeはreactの関数であるカスタムhooks
+  const { count, isShow, handleClick, handleDisplay } = useCounter();//useHogeはreactの関数
   const { text, array, handleChange, handleAdd } = useInputArray();
   useBgLightBlue();
 
